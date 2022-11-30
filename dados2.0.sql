@@ -1,0 +1,178 @@
+INSERT INTO tipo_funcionario(cod_tipo_funcionario, tipo_funcionario) VALUES
+(01, "Guarda"),
+(02, "Restauradores de obras"),
+(03, "Operários de limpeza");
+
+INSERT INTO tipo_obra (cod_tipo_obra, desc_tipo_obra) VALUES
+(03, "pintura"),
+(04, "escultara"),
+(05, "naturalismo"),
+(06, "pinura"),
+(07, "escultura"),
+(08, "pintura"),
+(09, "escultura"),
+(10, "pintura"),
+(11, "escultura"),
+(12, "pintura"),
+(13, "pintura"),
+(14, "pintra"),
+(15, "escultura"),
+(16, "escultura"),
+(17, "pintura"),
+(18, "pintura"),
+(19, "pintura"),
+(20, "escultura");
+
+
+
+INSERT INTO autor(cod_autor, nacionalidade_autor, nome_autor) VALUES
+(01, "BR", "Cláudio Henrique"),
+(02, "DE", "Geovanna Shopia Goerdet"),
+(03, "AR", "Kaio Castro"),
+(04, "BO", "Isabela Horodeski"),
+(05, "CA", "Mikaela Holland"),
+(06, "BR", "Valdinei de Souza"),
+(07, "CN", "Justin Biber"),
+(08, "BR", "Amanda Hildrante"),
+(09, "US", "Victor Mello"),
+(10, "BR", "Cláudia Menedes"),
+(11, "FR", "Ramon Alves"),
+(12, "HU", "Jamilly Alves dos Santos"),
+(13, "BR", "Monalisa Costa"),
+(14, "IN", "Leal"),
+(15, "BR", "Kassandra Costa"),
+(16, "IT", "João Cessar de Caio Costa"),
+(17, "MX", "Cláudio Henrique"),
+(18, "PT", "Fregory Ribeiro"),
+(19, "BR", "Marcelo Henrique"),
+(20, "TR", "Caio Ribeiro");
+
+insert INTO funcionario( id_funcionario, nome_funcionario, salario_funcionario, cpf_funcionario, cod_tipo_funcionario) VALUES
+(02, "Matheus da Costa", "1700", "561.954.059-95", 03),
+(03, "Alerandro Dummont", "1700", "861.689.059-80", 03),
+(04, "Carlos da SIlva", "5000", "861.259.589-32", 02),
+(05, "Geovanna Lima", "1750", "561.589.699-40", 01),
+(06, "Esteafni Cristina", "1750", "692.989.051-65", 01),
+(07, "Cristiana Silva", "5000", "154.598.069-04", 02),
+(08, "Juliana Dalolo", "1700", "987.856.055-65", 03),
+(09, "Arthur Marques", "5000", "198.959.033-05", 02),
+(10, "Marcelo Dunns", "1750", "785.259.829-14", 01),
+(11, "João Costa", "1700", "596.579.809-78", 03),
+(12, "Henrique Figureiroz", "5000", "154.649.099-44", 02),
+(13, "Cristian Moras", "1750", "198.924.052-68", 01),
+(14, "Monta Souza", "1700", "414.945.086-40", 03),
+(15, "israel Moura", "1700", "251.069.005-06", 03),
+(16, "Mikaeli Moura", "5000", "681.957.029-78", 02),
+(17, "Alex da Silva", "1750", "784.989.598-24", 01),
+(18, "Sidney Costa", "1750", "154.906.049-14", 01),
+(19, "Valmir Moura", "1700", "624.069.549-98", 03),
+(20, "Ana Laura Costa", "5000", "158.059.052-87", 02);
+
+INSERT INTO materia_prima(cod_mat_prima, qtd_est_mat, nome_mat_prima) VALUES
+(01, 500, "Madeira"),
+(02, 500, "Argila"),
+(03, 500, "Tinta acrílica"),
+(04, 500, "Tinta óleo"),
+(05, 500, "Marmore branco"),
+(06, 500, "Marmore preto"),
+(07, 500, "Marmore travertino"),
+(08, 500, "Gesso"),
+(09, 500, "Tinta aquarela"),
+(10, 500, "Tinta guache"),
+(11, 500, "tela de linho"),
+(12, 500, "Resina"),
+(13, 500, "Espátula"),
+(14, 500, "Pincel"),
+(15, 500, "Trincha"),
+(16, 500, "Cera de abelha"),
+(17, 500, "Paraloid"),
+(18, 500, "Folha de ouro"),
+(19, 500, "Folha de cobre"),
+(20, 500, "Verniz");
+
+INSERT INTO salao(cod_salao, num_salao, andar_museu, salao) VALUES
+(02,02,02, "naturalismo"),
+(03,03,03, "cinema"),
+(04,04,04, "manga"),
+(05,05,05, "realismo"),
+(06,06,06, "serie"),
+(07,07,07, "musica"),
+(08,08,08, "dança"),
+(09,09,09, "pintura"),
+(10,10,10, "HQ"),
+(11,11,11, "teatro"),
+(12,12,12, "arte-digital"),
+(13,13,13, "jogos"),
+(14,14,14, "pintura"),
+(15,15,15, "movimento"),
+(16,16,16, "surrealismo"),
+(17,17,17, "curta metragem"),
+(18,18,18, "longa metragem"),
+(19,19,19, "animacao"),
+(20,20,20, "anime");
+
+INSERT INTO obra(cod_obra, ano_obra, titu_obra, peso_obra, material_obra, desc_estilo_obra, cod_autor, cod_tipo_obra)VALUES
+(01, "2013", "Friendship", 02, "Tela", "Cubista", 06, 01),
+(02, "2005", "Serene Price", 02, "Tela", "Expressionista", 14, 01),
+(03, "1998", "Crushing Compassion", 500, "Ferro", "Renascentista", 05, 02),
+(04, "2022", "Goals of Crime", 800, "Madeira", "Barroco", 07, 02),
+(05, "2014", "Eternity", 70, "Marmore", "Renascentista", 11, 02),
+(06, "2020", "Depressions of Discovery", 03, "Tela", "Realista", 13, 01),
+(07, "2022", "Generous Dream", 40, "Argila", "Barroco", 19, 02),
+(08, "2010", "Death", 30, "Ferro", "Neoclássica", 03, 02),
+(09, "2019", "Duty of Chemistry", 03, "Tela", "Impressionista", 04, 01),
+(10, "1995", "Crushing Compassion", 02, "Tela", "Realista", 06, 01),
+(11, "1990", "Question of Sensitivity", 02, "Tela", "Impressionista", 10, 01),
+(12, "2022", "Tradition of Fate", 90, "Gesso", "Barroco", 20, 02),
+(16, "2021", "Repulsive Clock", 80, "Aluminio", "Neoclássica", 16, 02),
+(17, "2018", "Grounded Girl", 05, "Tela", "Surrealista", 09, 01),
+(18, "2004", "Smile of Attraction", 05, "Tela", "Cubista", 08, 01),
+(19, "2000", "Service of Romance", 100, "Marmore", "Renascentista", 18, 02),
+(20, "2012", "Nostalgic Extremes", 04, "Tela", "Expressionista", 01, 01);
+
+
+INSERT INTO salao_obra (salao_cod_salao, obra_cod_obra, posicao_salao) VALUES 
+(01, 01,"centro"),
+(02, 02, "parede esqueda")
+(03, '03', "parede direita"),
+(04, "04", "centro"),
+(05, "05", "parede central"),
+(06, "06", "gabinete"),
+(07, "07", "porta"),
+(08, "08", "chao"),
+(09, "09", "parede esquerda"),
+(10, "10", "parede direita"),
+(11, "11", "parede central"),
+(12, "12", "porta"),
+(13, "13", "chao"),
+(14, "14", "gabinete"),
+(15, "15", "parede direita"),
+(16, "16", "chao"),
+(17, "17", "centro"),
+(18, "18", "porta"),
+(19, "19", "gabinete"),
+(20, 20, "parede central");
+
+
+
+INSERT INTO atividade(ob_cod_obra, func_id_funcionario, hora_entrada, hora_saida, data_atividade) VALUES
+(01, 02, "08:30:09", "13:08:45", "2022-05-05");
+(03, 03, "08:50:05", "21:04:21", "2022-05-05"),
+(04, 04, "08:07:06", "21:34:21", "2022-05-05"),
+(05, 05, "08:08:06", "21:19:21", "2022-05-05"),
+(06, 06, "08:05:06", "21:23:21", "2022-05-05"),
+(07, 07, "08:04:06", "21:09:21", "2022-05-05"),
+(08, 08, "08:20:06", "21:15:21", "2022-05-05"),
+(09, 09, "08:23:06", "21:17:21", "2022-05-05"),
+(10, 10, "08:24:06", "21:19:21", "2022-05-05"),
+(11, 11, "08:45:06", "21:34:21", "2022-05-05"),
+(12, 12, "08:55:06", "21:57:21", "2022-05-05"),
+(13, 13, "08:09:06", "21:04:21", "2022-05-05"),
+(14, 14, "08:00:00", "21:17:21", "2022-05-05"),
+(15, 15, "08:02:06", "21:13:21", "2022-05-05"),
+(16, 16, "08:03:06", "21:24:21", "2022-05-05"),
+(17, 17, "08:08:06", "21:40:21", "2022-05-05"),
+(18, 18, "08:15:06", "21:23:21", "2022-05-05"),
+(19, 19, "08:17:06", "21:19:21", "2022-05-05"),
+(20, 20, "08:18:06", "21:35:21", "2022-05-05");
+
